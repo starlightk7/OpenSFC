@@ -1,0 +1,4 @@
+(sym_lib_table
+  (version 7)
+  (lib (name "OpenSFC")(type "KiCad")(uri "${KIPRJMOD}/../common/libraries/OpenSFC.kicad_sym")(options "")(descr ""))
+)

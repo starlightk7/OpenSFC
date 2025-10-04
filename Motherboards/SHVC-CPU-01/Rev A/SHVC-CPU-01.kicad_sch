@@ -1,0 +1,144 @@
+(kicad_sch
+	(version 20250114)
+	(generator "eeschema")
+	(generator_version "9.0")
+	(uuid "c2897ebe-3c48-4c40-b48f-930de0e12f39")
+	(paper "A5")
+	(title_block
+		(title "SHVC-CPU-01")
+		(date "2025-05-18")
+		(rev "A")
+		(company "License: CERN-OHL-S")
+		(comment 1 "This Document Is Not Endorsed By Nintendo")
+		(comment 2 "Documented by starlightk7 for Repair Usage")
+		(comment 3 "Originally Designed By Nintendo")
+		(comment 4 "Used In Launch Super Famicoms and SNES Units")
+	)
+	(lib_symbols)
+	(text "PAGE2\nFRONT\n"
+		(exclude_from_sim no)
+		(at 62.738 62.23 0)
+		(effects
+			(font
+				(size 3.81 3.81)
+				(thickness 0.254)
+				(bold yes)
+			)
+		)
+		(uuid "2140a108-816a-4d07-a643-7e1f178047f4")
+	)
+	(text "PAGE3\nBACK"
+		(exclude_from_sim no)
+		(at 126.746 63.5 0)
+		(effects
+			(font
+				(size 3.81 3.81)
+				(thickness 0.254)
+				(bold yes)
+			)
+		)
+		(uuid "60531f0d-7dd5-4677-a359-44fad797dd28")
+	)
+	(text "KiCad MultiSheet \nIs Clunky\nLook on the \nrespective pages."
+		(exclude_from_sim no)
+		(at 53.34 116.84 0)
+		(effects
+			(font
+				(size 3.81 3.81)
+				(thickness 0.254)
+				(bold yes)
+			)
+		)
+		(uuid "f83f7229-008e-4c41-b2e1-91437c022109")
+	)
+	(sheet
+		(at 100.965 27.305)
+		(size 53.975 62.865)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "3b0b9f7f-959d-41ca-9f9e-2c4d1e1fe924")
+		(property "Sheetname" "SHVC-CPU-01-Back"
+			(at 100.965 26.5934 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "SHVC-CPU-01-Back.kicad_sch"
+			(at 100.965 90.7546 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "SHVC-CPU-01"
+				(path "/c2897ebe-3c48-4c40-b48f-930de0e12f39"
+					(page "2")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 35.56 26.035)
+		(size 55.88 64.77)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "b6951f6b-873b-4e50-93cd-9bdf56af0337")
+		(property "Sheetname" "SHVC-CPU-01-Front"
+			(at 35.56 25.3234 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "SHVC-CPU-01-Front.kicad_sch"
+			(at 35.56 91.3896 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "SHVC-CPU-01"
+				(path "/c2897ebe-3c48-4c40-b48f-930de0e12f39"
+					(page "1")
+				)
+			)
+		)
+	)
+	(sheet_instances
+		(path "/"
+			(page "1")
+		)
+	)
+	(embedded_fonts no)
+)

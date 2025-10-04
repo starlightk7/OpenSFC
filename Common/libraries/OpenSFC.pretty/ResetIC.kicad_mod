@@ -1,0 +1,105 @@
+(footprint "ResetIC"
+	(version 20241229)
+	(generator "pcbnew")
+	(generator_version "9.0")
+	(layer "F.Cu")
+	(property "Reference" "REF**"
+		(at 0 -0.5 0)
+		(unlocked yes)
+		(layer "F.SilkS")
+		(uuid "c6cc5aea-a0b1-4cc4-8945-d7ca0a145747")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.1)
+			)
+		)
+	)
+	(property "Value" "ResetIC"
+		(at 0 1 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(uuid "f20f1001-54a5-4d28-91c8-f632ae7cb455")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Datasheet" ""
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "d29a513b-2f46-4a49-93cf-8335563151b7")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Description" ""
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "05a55aa0-1f74-45b7-86c7-967b487a9581")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(attr smd)
+	(fp_rect
+		(start -1.421498 -1.576658)
+		(end 1.434768 2.889436)
+		(stroke
+			(width 0.2)
+			(type solid)
+		)
+		(fill no)
+		(layer "F.SilkS")
+		(uuid "5ede6241-9a4c-4343-99b9-ba381b8b8bcd")
+	)
+	(fp_text user "${REFERENCE}"
+		(at 0 2.5 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(uuid "5a7645fb-b6c9-435b-a558-f9c32a07f312")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(pad "1" smd roundrect
+		(at -2.489556 -0.542506)
+		(size 1.438567 1.06749)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(roundrect_rratio 0.15)
+		(thermal_bridge_angle 45)
+		(uuid "15d81455-81e7-48bf-a8bf-be86c7fca836")
+	)
+	(pad "2" smd roundrect
+		(at -2.5 2)
+		(size 1.438567 1.06749)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(roundrect_rratio 0.15)
+		(thermal_bridge_angle 45)
+		(uuid "d1b4b81e-6e3f-4a2a-82b7-a7bca019f8df")
+	)
+	(pad "3" smd roundrect
+		(at 2.376044 0.644225)
+		(size 1.438567 1.06749)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(roundrect_rratio 0.15)
+		(thermal_bridge_angle 45)
+		(uuid "21b10195-28bb-49a7-a6af-0d4b7e6de5ec")
+	)
+	(embedded_fonts no)
+)
