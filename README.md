@@ -1,7 +1,5 @@
 # OpenSFC
 
-## Note: This is a placeholder. OpenSFC will see it's first public release on October 10th, 2025.
-
 ## Introduction
 
 This repository contains OSHW Reproduction Parts related to the Super Famicom (SFC) / Super NES (SNES) game console under the umbrella name OpenSFC. While the parts are primarily developed form the Super Famicom models, you can build a North American SNES as well as long as you use the appropriate front and rear panels. See the documentation for details.
