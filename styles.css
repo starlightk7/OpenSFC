@@ -1,0 +1,283 @@
+/* Maintenance gate via root class — no JS race conditions */
+html.locked .layout { display: none; }
+html.locked #maintenance { display: flex; }   /* ensure it's visible */
+html.unlocked #maintenance { display: none; } /* hide overlay when unlocked */
+:root{
+  --bg:#0b0b0f;--card:#111319;--border:#262a33;--text:#e8e9ef;--muted:#b7bccb;--link:#ffd15c;--accent:#ffcc4d;
+}
+*{box-sizing:border-box}
+html,body{margin:0;padding:0;background:var(--bg);color:var(--text);font:16px/1.55 system-ui,-apple-system,Segoe UI,Roboto,Inter,Helvetica Neue,Arial,Noto Sans,Apple Color Emoji,Segoe UI Emoji}
+a{color:var(--link);text-decoration:none}a:hover{text-decoration:underline}
+.site-header{background:linear-gradient(180deg,#1a1c23,#12141a);border-bottom:1px solid var(--border)}
+.banner{display:block;width:100%;height:auto;max-height:240px;padding:0px;}
+.layout{display:grid;grid-template-columns:280px 1fr;min-height:calc(100vh - 240px)}
+@media(max-width:860px){.layout{grid-template-columns:1fr}.sidebar{border-right:none;border-bottom:1px solid var(--border)}}
+.sidebar{background:var(--card);border-right:1px solid var(--border);padding:18px 16px}
+.brand{font-weight:700;letter-spacing:.2px;margin:2px 2px 14px}
+#nav{display:grid;gap:6px}
+#nav a{display:block;padding:10px 12px;border-radius:10px;color:var(--text);border:1px solid transparent}
+#nav a:hover{background:rgba(255,255,255,.03);border-color:var(--border)}
+#nav a.active{background:rgba(255,255,255,.06);border-color:var(--border)}
+.sidebar-footer{margin-top:18px;padding-top:12px;border-top:1px dashed var(--border)}
+.ibom-link{font-weight:600}
+.content{padding:26px 28px 56px}
+.doc-content{max-width:980px}
+.doc-content h1,.doc-content h2,.doc-content h3{line-height:1.25;margin:1.25em 0 .5em}
+.doc-content h1{font-size:2rem}.doc-content h2{font-size:1.5rem}.doc-content h3{font-size:1.2rem;color:var(--muted)}
+.doc-content p,.doc-content ul,.doc-content ol{color:var(--text);margin:.7em 0}
+.doc-content code,.doc-content pre{background:#0f1117;border:1px solid var(--border);border-radius:10px;padding:.15em .4em;font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,Liberation Mono,monospace}
+.doc-content pre{padding:12px 14px;overflow:auto}
+.doc-content img{display:block;max-width:100%;height:auto;border-radius:12px;border:1px solid var(--border);cursor:zoom-in}
+.site-footer{border-top:1px solid var(--border);margin-top:36px;padding-top:12px;color:var(--muted)}
+.medium-zoom-image {
+  max-width: none !important;
+  max-height: none !important;
+}
+
+/* --- Maintenance Overlay --- */
+.hidden { display: none; }
+#maintenance {
+  position: fixed;
+  inset: 0;
+  background: #0b0b0f radial-gradient(circle at 50% 35%, #ff000008, #000);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #eee;
+  z-index: 9999;
+  text-align: center;
+}
+.maintenance-inner {
+  background: rgba(0,0,0,0.6);
+  padding: 40px 50px;
+  border-radius: 14px;
+  border: 1px solid #333;
+}
+#maintenance h1 {
+  font-size: 1.8rem;
+  color: var(--accent, #ffcc4d);
+  margin-bottom: 0.4em;
+}
+
+
+/* iBOM embed area */
+.ibom-frame-wrap {
+  height: calc(100vh - 240px - 56px);
+  min-height: 480px;
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  overflow: hidden;
+  background: #000;
+}
+.ibom-frame {
+  width: 100%;
+  height: 100%;
+  border: 0;
+  display: block;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+/* Root layout fills the viewport */
+.layout {
+  display: flex;
+  flex-direction: row;
+  height: 100vh; /* lock to viewport */
+  overflow: hidden; /* prevent double scroll */
+}
+
+/* Sidebar (fixed-height column) */
+.sidebar {
+  flex: 0 0 260px;       /* fixed width */
+  height: 100vh;         /* always full viewport height */
+  display: flex;
+  flex-direction: column;
+  background: #1a1a1a;
+  color: #eee;
+  border-right: 1px solid var(--border);
+  box-sizing: border-box;
+}
+
+/* Navigation area grows to fill sidebar */
+.sidebar nav {
+  flex: 1 1 auto;
+  overflow: hidden; /* ensure nav never scrolls */
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  padding: 12px;
+}
+
+/* Footer pinned to bottom */
+.sidebar-footer {
+  flex-shrink: 0;
+  padding: 12px;
+  border-top: 1px dashed var(--border);
+  text-align: center;
+  font-size: 0.85em;
+}
+
+/* Main content takes rest of space and scrolls */
+.content {
+  flex: 1 1 auto;
+  height: 100vh;         /* same as sidebar */
+  overflow-y: auto;      /* only scrollable area */
+  background: #181818;
+  color: #eee;
+  box-sizing: border-box;
+  padding: 24px;
+}
+
+/* Optional header area inside main */
+.top-header {
+  position: sticky;
+  top: 0;
+  background: #181818;
+  border-bottom: 1px solid var(--border);
+  padding-bottom: 8px;
+  margin-bottom: 16px;
+}
+
+/* Nav links */
+#nav a {
+  display: block;
+  color: #ccc;
+  text-decoration: none;
+  padding: 6px 8px;
+}
+#nav a.active {
+  color: #fff;
+  font-weight: bold;
+}
+
+/* Sidebar background fills full viewport */
+.sidebar {
+  height: 100vh;
+  background: #1a1a1a;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Nav area stops flex items from expanding */
+#nav {
+  display: block;          /* not grid/flex — prevents stretching */
+  flex: none;              /* don't grow or shrink */
+  padding: 12px;
+  margin: 0;
+}
+
+/* Footer stays pinned at bottom */
+.sidebar-footer {
+  margin-top: auto;        /* pushes footer to bottom */
+  border-top: 1px dashed var(--border);
+  padding: 10px 12px;
+}
+
+/* Ensure the page layout fills viewport */
+.layout {
+  display: flex;
+  height: 100vh;
+}
+
+.hamburger,
+.mobile-topbar {
+  display: none;
+}
+
+/* ==================== MOBILE RESPONSIVE ==================== */
+@media (max-width: 768px) {
+  .layout {
+    flex-direction: column;       /* stack top to bottom */
+    height: auto;
+  }
+
+  :root { --hamburger-offset: 12px; --hamburger-size: 40px; --hamburger-gap: 24px; }
+
+  .sidebar {
+    padding-top: calc(var(--hamburger-offset) + var(--hamburger-size) + var(--hamburger-gap));
+  }
+  
+  .banner {
+    margin-top: 75px;
+   }
+
+  /* Sidebar becomes a hidden drawer */
+  .sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 220px;
+    height: 100vh;
+    transform: translateX(-100%);
+    transition: transform 0.25s ease;
+    z-index: 1000;
+    box-shadow: 2px 0 6px rgba(0,0,0,0.4);
+  }
+
+  /* Sidebar visible when toggled */
+  .sidebar.open {
+    transform: translateX(0);
+  }
+
+  /* Overlay behind the sidebar when open */
+  .sidebar-overlay {
+    position: fixed;
+    inset: 0;
+    background: rgba(0,0,0,0.5);
+    display: none;
+    z-index: 999;
+  }
+
+  .sidebar-overlay.show {
+    display: block;
+  }
+
+  /* Main content now full width */
+  .content,
+  main,
+  article {
+    margin-left: 0;
+    height: auto;
+    overflow: visible;
+  }
+
+
+  /* fixed top bar that stays with the hamburger */
+  .mobile-topbar {
+    display: flex !important;
+    align-items: center;
+    position: fixed;
+    top: 0; left: 0; right: 0;
+    height: 75px;
+    background: #1a1a1a;
+    color: #fff;
+    border-bottom: 1px solid var(--border);
+    padding: 0 12px;
+    z-index: 1100; /* above drawer + overlay */
+  }
+  .mobile-topbar .page-title { 
+    margin-left: 55px;
+    font-weight: 600; 
+   }
+
+  .hamburger {
+    display: block !important;
+    position: fixed;
+    top: 12px;
+    left: 12px;             /* change to right:12px; if you prefer top-right */
+    z-index: 1100;          /* higher than sidebar + overlay */
+    background: #1a1a1a;
+    color: #fff;
+    border: 1px solid var(--border);
+    border-radius: 6px;
+    width: 40px;
+    height: 40px;
+    font-size: 22px;
+    cursor: pointer;
+  }
+}
+

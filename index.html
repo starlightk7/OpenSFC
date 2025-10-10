@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>OpenSFC Documentation</title>
+  <meta name="description" content="Project Documentation for OpenSFC, an Open Source Hardware SFC/SNES" />
+  <link rel="stylesheet" href="styles.css" />
+<script>
+(function () {
+  // --- Maintenance settings ---
+  var MAINTENANCE_ENABLED = false;   // set to false to disable gate
+  var REQUIRED_KEY = "letmein";     // your key
+
+  function readKeyFromUrl() {
+    var s = new URLSearchParams(window.location.search);
+    if (s.has("key")) return s.get("key");
+    var hash = window.location.hash || "";
+    var q = hash.indexOf("?");
+    if (q !== -1) {
+      var hs = new URLSearchParams(hash.slice(q + 1));
+      if (hs.has("key")) return hs.get("key");
+    }
+    return null;
+  }
+
+  var allowed = !MAINTENANCE_ENABLED || (localStorage.getItem("starlight_key") === REQUIRED_KEY);
+  var k = readKeyFromUrl();
+  if (k === REQUIRED_KEY) {
+    localStorage.setItem("starlight_key", k);  // EU-safe, non-tracking
+    allowed = true;
+  }
+
+  // Tag the root element BEFORE anything renders
+  var cls = allowed ? "unlocked" : "locked";
+  document.documentElement.classList.add(cls);
+})();
+</script>
+</head>
+<body>
+  <div id="maintenance" class="hidden">
+    <div class="maintenance-inner">
+      <h1>Under Maintenance</h1>
+      <p>The site is currently in pre-release setup.<br />
+         Please check back later.</p>
+    </div>
+  </div>
+  <!-- Fixed top bar for mobile only -->
+  <div class="mobile-topbar">
+     <button id="hamburger-btn" class="hamburger" aria-label="Menu">☰</button>
+     <div class="page-title">OpenSFC Documentation</div>
+  </div>
+  <div class="layout">
+    <div>
+        <div class="topbar">
+          <button class="hamburger" onclick="toggleSidebar()">☰</button> 
+        </div>
+      <div class="banner">
+          <img src="assets/header.png" alt="Starlight Retro" class="banner" decoding="async" />
+      </div>
+    <aside class="sidebar" id="sidebar">
+      <div class="brand">OpenSFC Documentation</div>
+      <nav id="nav"></nav>
+    </aside>
+</div>
+    <main class="content">
+        <div class="page-title">OpenSFC Documentation</div>
+        <article id="doc" class="doc-content" aria-live="polite"></article>
+        <footer class="site-footer">
+          <span>© <span id="year">2025</span>, starlightk7, Starlight Retro</span>
+        </footer>
+    </main>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/medium-zoom@1.1.0/dist/medium-zoom.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
