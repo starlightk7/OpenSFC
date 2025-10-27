@@ -1,7 +1,7 @@
 # Bill of Materials (BOM)
 
 ## Parts BOM
-The [following spreadsheet](https://starlightk7.github.io/OpenSFC/assets/OSFC-BOM.ods) contains a description of required donor parts for the project as well as a mouser-based BOM if you'd like to use as many new parts as possible'.
+The [following spreadsheet](https://docs.google.com/spreadsheets/d/1zoEOy6N3Ll8hXqOk3DKFTWjwM4TRxby1sjQ6yHRMT5c) contains a description of required donor parts for the project as well as a mouser-based BOM if you'd like to use as many new parts as possible'.
 
 ## Interactive BOMs for Placement Assistance
 
