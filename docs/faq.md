@@ -14,7 +14,7 @@
 
 **Q:** Can I commission you for a pre-built?
 
-**A:** In general I will not have time to do this on an ongoing basis, however, I may irregularly list pre-builts on the Ko-Fi store of units that were used for build validation. Once these are gone, they're generally gone unless there is development need to build another. [1upRestorations](https://1uprestorations.com) will provide a [custom build service](https://1uprestorations.com/collections/pre-modded-consoles/products/opensfc-custom-build) if you wish to commission a pre-built.
+**A:** In general I will not have time to do this on an ongoing basis, however, I may irregularly list pre-builts on the Ko-Fi store of units that were used for build validation. Once these are gone, they're generally gone unless there is development need to build another. [1upRestorations](https://1uprestorations.com) will provide a [custom build service](https://1uprestorations.com/collections/pre-modded-consoles/products/opensfc-custom-build) for customers in the US/Canada if you wish to commission a pre-built. [Modding Marius](https://moddingmarius.com/super-nintendo/) will take commissions for a pre-built out of France for EU residents.
 
 **Q:** Can I use **&lt;insert mod x&gt;**?
 
