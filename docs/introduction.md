@@ -9,9 +9,10 @@ This is an Open Source Hardware (OSHW) project aimed at creating 1:1 reproductio
 
 # Install Videos
 
-These videos demonstrate the installation process:
+These videos from the community demonstrate the installation process:
 * [1up Restorations OpenSFC Installation Video (English)](https://youtu.be/3N_iRRNhPbA)
 * [Assistência Retrô OpenSFC Install Video (Portuguese)](https://www.youtube.com/watch?v=s9iTc--j23Y)
+* [Fenris Wolf Retro OpenSFC Installation Video (English)](https://youtu.be/6wmiuE3He4w?si=xQSYrtJ7eRGYEiC7)
 
 # Why Would I Want This?
 
