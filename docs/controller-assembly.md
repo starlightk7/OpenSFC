@@ -61,4 +61,4 @@ If you want to tune the buttons, put the sticker on the underside of the buttons
 
 If you want to tune the L/R triggers, you can do the underside of the trigger or the underside of the trigger board.
 
-One tuned, the controller should feel very comfortable. Feel free to reach out if you need help
+Once tuned, the controller should feel very comfortable. Feel free to reach out if you need help
