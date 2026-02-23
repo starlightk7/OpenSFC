@@ -24,7 +24,7 @@ WARNING: if you are sloppy with your work consider covering the button contacts 
 * For this model, I recommend installing them on the back like so to avoid conflicts with pegs. Be conscious of clearance.
 * Install the resistors *before* the cable connector to make your life easier on the ones near it
 
-![image|601x292](https://starlightk7.github.io/OpenSFC/assets/56V313A.jpg)
+![image|601x292](https://starlightk7.github.io/OpenSFC/assets/56V313A_Back.jpg)
 
 ### 1992 Model:
 
