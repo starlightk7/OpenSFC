@@ -22,6 +22,6 @@ This approach will have people who both like and dislike it and that's okay. The
   * [TCMK-81X CCK-N10 SFC Style (SHVC/GPM)](https://starlightk7.github.io/OpenSFC/assets/TCMK-81X_CCK-N10.pdf)
   * [TCMK-81X CCK-N20 SNES Style (SHVC/GPM)](https://starlightk7.github.io/OpenSFC/assets/TCMK-81X_CCK-N20.pdf)
 * Controllers
-  * [56V313A (1990 Model)](https://starlightk7.github.io/OpenSFC/assets/53V313A.pdf)
-  * [56V313D (1992+ Model)](https://starlightk7.github.io/OpenSFC/assets/53V313D.pdf)
-  * [56V314A (Shoulder Button)](https://starlightk7.github.io/OpenSFC/assets/53V314A.pdf)
+  * [56V313A (1990 Model)](https://starlightk7.github.io/OpenSFC/assets/56V313A.pdf)
+  * [56V313D (1992+ Model)](https://starlightk7.github.io/OpenSFC/assets/56V313D.pdf)
+  * [56V314A (Shoulder Button)](https://starlightk7.github.io/OpenSFC/assets/56V314A.pdf)
