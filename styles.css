@@ -17,9 +17,7 @@ a{color:var(--link);text-decoration:none}a:hover{text-decoration:underline}
 #nav{display:grid;gap:6px}
 #nav a{display:block;padding:10px 12px;border-radius:10px;color:var(--text);border:1px solid transparent}
 #nav a:hover{background:rgba(255,255,255,.03);border-color:var(--border)}
-#nav a.active{background:rgba(255,255,255,.06);border-color:var(--border)}
-.sidebar-footer{margin-top:18px;padding-top:12px;border-top:1px dashed var(--border)}
-.ibom-link{font-weight:600}
+#nav a.active { background: rgba(255, 255, 255, 0.06); border-color: var(--border) }
 .content{padding:26px 28px 56px}
 .doc-content{max-width:980px}
 .doc-content h1,.doc-content h2,.doc-content h3{line-height:1.25;margin:1.25em 0 .5em}
@@ -166,7 +164,7 @@ html, body {
 #nav {
   display: block;          /* not grid/flex — prevents stretching */
   flex: none;              /* don't grow or shrink */
-  padding: 12px;
+  padding: 12px 0;
   margin: 0;
 }
 
@@ -177,10 +175,81 @@ html, body {
   padding: 10px 12px;
 }
 
-/* Ensure the page layout fills viewport */
-.layout {
+/* ==================== NAVIGATION GROUPS ==================== */
+
+/* Group header */
+.nav-group-header {
   display: flex;
-  height: 100vh;
+  align-items: center;
+  padding: 8px 12px;
+  cursor: pointer;
+  user-select: none;
+  color: var(--text);
+  font-weight: 600;
+  background: rgba(255, 255, 255, 0.02);
+  border-radius: 8px;
+  margin-bottom: 4px;
+}
+
+.nav-group-header:hover {
+  background: rgba(255, 255, 255, 0.06);
+}
+
+/* Toggle button inside group header */
+.group-toggle {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 18px;
+  height: 18px;
+  margin-right: 8px;
+  font-size: 14px;
+  background: none;
+  border: none;
+  color: var(--accent);
+  cursor: pointer;
+}
+
+.group-toggle:hover {
+  opacity: 0.8;
+}
+
+/* Arrow symbols using CSS borders - reliable across all browsers including Firefox */
+.group-toggle::before {
+  display: block;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 4px 0 4px 6px;
+  border-color: transparent transparent transparent var(--accent);
+  content: "";
+  transition: transform 0.15s ease;
+}
+
+.group-toggle.expanded::before {
+  transform: rotate(90deg);
+}
+
+/* Group content container */
+.nav-group-content {
+  display: none;
+  margin-left: 12px;
+}
+
+.nav-group-content.expanded {
+  display: block;
+}
+
+/* Nav links inside a group - indented to show hierarchy */
+#nav .nav-group-header + .nav-group-content a {
+  padding-left: 32px;
+  font-size: 0.95em;
+  color: var(--muted);
+  border-left: 2px solid transparent;
+}
+
+#nav a.active {
+  border-left-color: var(--accent);
 }
 
 .hamburger,

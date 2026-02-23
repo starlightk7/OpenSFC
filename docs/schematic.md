@@ -3,11 +3,13 @@
 ## Notes on Schematics
 This page contains PDFs of schematics I created for OpenSFC.
 
-Please note that my schematics are not traditional engineering schematics. I am not an engineer, just a hobbyist. I have seen many other hobbyists struggle to decode complex schematics and map them back to their boards, often needing someone else to interpret for them. I envision the primary users of my boards being hobbyists with a little knowledge of a soldering iron who want to repair their unit or build a fun project, not professional engineers. As such I have chosen to draw my schematics more as "Schematic Art". They are laid out like a visual depiction of the actual board. 
+Please note that my schematics are not traditional engineering schematics. I am not an engineer, just a hobbyist. I have seen many other hobbyists struggle to decode complex schematics and map them back to their boards, often needing someone else to interpret for them. 
+
+I envision the primary users of my boards being hobbyists with a little knowledge of a soldering iron who want to repair their unit or build a fun project, not professional engineers. As such I have chosen to draw my schematics more as "Schematic Art". They are laid out like a visual depiction of the actual board. 
 
 This will likely feel messy and inefficient to a professional engineer, but for an average person they will clearly be able to correlate what they are looking at to the board they are working on and see the color coded flow of data by function when debugging. 
 
-This approach will have people who both like and dislike it and that's okay. The beauty of Open Source is anyone is free to remix it to suit their needs. If you prefer a more traditional schematic, you can also reference the existing community [J. Donaldson schematic](https://wiki.superfamicom.org/uploads/snes_schematic_color.pdf).
+This approach will have people who both like and dislike it and that's okay. The beauty of Open Source is anyone is free to remix it to suit their needs. If you prefer a more traditional schematic, you can also reference the existing  [J. Donaldson schematic](https://wiki.superfamicom.org/uploads/snes_schematic_color.pdf). Please note that despite having a section for the SHVC-SOUND Pinout the Donaldson Schematic is a GPM Schematic. There are numerous differences with SHVC and other models, so you cannot count on it for passive values when doing an OpenSFC SHVC build. You can, however, see how ICs are generally connected with it.
 
 ## PDF Diagrams
 
@@ -19,3 +21,7 @@ This approach will have people who both like and dislike it and that's okay. The
 * Front Panel Controller Board
   * [TCMK-81X CCK-N10 SFC Style (SHVC/GPM)](https://starlightk7.github.io/OpenSFC/assets/TCMK-81X_CCK-N10.pdf)
   * [TCMK-81X CCK-N20 SNES Style (SHVC/GPM)](https://starlightk7.github.io/OpenSFC/assets/TCMK-81X_CCK-N20.pdf)
+* Controllers
+  * [56V313A (1990 Model)](https://starlightk7.github.io/OpenSFC/assets/53V313A.pdf)
+  * [56V313D (1992+ Model)](https://starlightk7.github.io/OpenSFC/assets/53V313D.pdf)
+  * [56V314A (Shoulder Button)](https://starlightk7.github.io/OpenSFC/assets/53V314A.pdf)

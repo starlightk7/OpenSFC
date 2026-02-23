@@ -1,9 +1,16 @@
 # Bill of Materials (BOM)
 
-## Parts BOM
-The [following spreadsheet](https://docs.google.com/spreadsheets/d/1zoEOy6N3Ll8hXqOk3DKFTWjwM4TRxby1sjQ6yHRMT5c) contains a description of required donor parts for the project as well as a mouser-based BOM if you'd like to use as many new parts as possible'.
+## Parts List
 
-## Interactive BOMs for Placement Assistance
+A list of compatible parts are 
+The [following spreadsheet](https://docs.google.com/spreadsheets/d/1zoEOy6N3Ll8hXqOk3DKFTWjwM4TRxby1sjQ6yHRMT5c) contains a description of required donor parts for the project as well as a mouser-based BOM if you'd like to use as many new parts as possible'. Each board has its own sheet.
+
+Quick Links:
+
+
+## Interactive Guides for Assembly Assistance
+
+These files visually show you where a given part number is located on the board. It is harder to keep these resources up to date with in-stock parts, so the actual part list is maintained in the spreadsheet above.
 
 * [SHVC-CPU-01](https://starlightk7.github.io/OpenSFC/ibom/ibom-shvc.html)
 * [SHVC-SOUND F](https://starlightk7.github.io/OpenSFC/ibom/ibom-sound.html)
