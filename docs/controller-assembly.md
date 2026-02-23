@@ -41,13 +41,13 @@ WARNING: if you are sloppy with your work consider covering the button contacts 
 
 ### Tuning Sensitivity
 
-Making custom controllers is a bit of an art due to micro-tolerance issues. All parts being produced today tend to have ~0.1~0.3mm tolerance ranges; this applies to everything, PCBs, Silicone Pads, Dpads/Buttons, Shells, etc.
+Making custom controllers is a bit of an art due to micro-tolerance issues. All parts being produced today tend to have ~0.1-0.3mm tolerance ranges; this applies to everything, PCBs, Silicone Pads, Dpads/Buttons, Shells, etc.
 
 When building a custom controller it is possible that the combination of parts you use will have microtolerance issues, leading to decreased sensitivity on inputs. This also effects the stock PCB, which is why 3rd party Silicone pads are notorious for stiff diagonals. As my boards are 1:1 copies of stock, they may encounter the same problems.
 
 Luckily, there is a cheap and easy way to tune these issues to your liking.
 
-Before tuning, turn on and test your controller. I recommend doing something like sliding in Super Mario and also diagonal movements in Zelda. It is highly possible, especially with 3rd party silicone pads or cases. Basically, 3rd party pads often are actually slightly big or small compared to the original ones. When you press, that makes them bend differently. I took some mitigations against this by widening the stock contacts a little and minimizing the distance between size, but it occasionally happens on a diagonal.
+Before tuning, turn on and test your controller. I recommend doing something like sliding in Super Mario and also diagonal movements in Zelda. It is possible they will feel stiff, especially with 3rd party silicone pads or cases. Basically, 3rd party pads often are actually slightly big or small compared to the original ones. When you press, that makes them bend differently. I took some mitigations against this by widening the stock contacts a little and minimizing the distance between size, but it occasionally happens on a diagonal.
 
 I recommend taking a 5mm hole punch onto 0.1mm sticker paper. Then start to augment the d-pad like so:
 
