@@ -5,7 +5,7 @@ Welcome to OpenSFC!
 This is an Open Source Hardware (OSHW) project aimed at creating 1:1 reproduction part for SFC / SNES consoles for use in repair and customization. In addition, parts will be documented, schematics drawn, and replacements for obsolete parts identified where possible.
 
 # Sample OpenSFC Build
-![image|300x400](https://starlightk7.github.io/OpenSFC/assets/osfc-intro.jpg)
+![image|300x400](https://starlightk7.github.io/OpenSFC/assets/osfc-intro.jpg?v=1)
 
 # Install Videos
 

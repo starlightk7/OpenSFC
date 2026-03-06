@@ -5,9 +5,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>OpenSFC Documentation</title>
   <meta name="description" content="Project Documentation for OpenSFC, an Open Source Hardware SFC/SNES" />
-  <link rel="stylesheet" href="styles.css" />
 <script>
 (function () {
+  // --- Cache busting version - increment on each deploy when assets change ---
+  var ASSET_VERSION = "v1";
+
   // --- Maintenance settings ---
   var MAINTENANCE_ENABLED = false;   // set to false to disable gate
   var REQUIRED_KEY = "letmein";     // your key
@@ -34,6 +36,12 @@
   // Tag the root element BEFORE anything renders
   var cls = allowed ? "unlocked" : "locked";
   document.documentElement.classList.add(cls);
+
+  // --- Inject stylesheet with cache-busting version ---
+  var link = document.createElement("link");
+  link.rel = "stylesheet";
+  link.href = "styles.css?v=" + ASSET_VERSION;
+  document.head.appendChild(link);
 })();
 </script>
 </head>
@@ -73,6 +81,6 @@
   </div>
   <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/medium-zoom@1.1.0/dist/medium-zoom.min.js"></script>
-  <script src="script.js"></script>
+  <script src="script.js?v=v1"></script>
 </body>
 </html>

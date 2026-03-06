@@ -14,7 +14,7 @@ WARNING: if you are sloppy with your work consider covering the button contacts 
 
 ### 1990 Model:
 
-![image|601x228](https://starlightk7.github.io/OpenSFC/assets/56V313A.jpg)
+![image|601x228](https://starlightk7.github.io/OpenSFC/assets/56V313A.jpg?v=1)
 
 * Features 2 8-bit shift registers with a non-standard pinout
 * Various carbon printed resistors are used (white silk on the ENIG repro)
@@ -24,11 +24,11 @@ WARNING: if you are sloppy with your work consider covering the button contacts 
 * For this model, I recommend installing them on the back like so to avoid conflicts with pegs. Be conscious of clearance.
 * Install the resistors *before* the cable connector to make your life easier on the ones near it
 
-![image|601x292](https://starlightk7.github.io/OpenSFC/assets/56V313A_Back.jpg)
+![image|601x292](https://starlightk7.github.io/OpenSFC/assets/56V313A_Back.jpg?v=1)
 
 ### 1992 Model:
 
-![image|601x239](https://starlightk7.github.io/OpenSFC/assets/56V313D.jpg)
+![image|601x239](https://starlightk7.github.io/OpenSFC/assets/56V313D.jpg?v=1)
 
 * Features a single 16-bit shift registers with a non-standard pinout
 * 3 carbon printed resistors are used as part of input protection
@@ -51,7 +51,7 @@ Before tuning, turn on and test your controller. I recommend doing something lik
 
 I recommend taking a 5mm hole punch onto 0.1mm sticker paper. Then start to augment the d-pad like so:
 
-![image|364x370](https://starlightk7.github.io/OpenSFC/assets/DPadSpacer.jpg)
+![image|364x370](https://starlightk7.github.io/OpenSFC/assets/DPadSpacer.jpg?v=1)
 
 Do it in 0.1mm increments until it feels right to you. Basically what happens here is, each layer of sticker will reduce how hard you must press on the pad to make contact. Usually no more than 0.3mm is needed
 
