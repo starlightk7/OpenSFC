@@ -23,7 +23,9 @@ Suggested usage for the documents and boards in this repository:
 
 Please read the [documentation](https://starlightk7.github.io/OpenSFC/) carefully before using the project.
 
-You can also watch install videos from [1upRestorations (English)](https://youtu.be/3N_iRRNhPbA), [Assistência Retrô (Portuguese)](https://www.youtube.com/watch?v=s9iTc--j23Y), or [Fenris Wolf Retro (English)](https://youtu.be/6wmiuE3He4w?si=xQSYrtJ7eRGYEiC7).
+You can also watch SHVC install videos from [1upRestorations (English)](https://youtu.be/3N_iRRNhPbA), [Assistência Retrô (Portuguese)](https://www.youtube.com/watch?v=s9iTc--j23Y), or [Fenris Wolf Retro (English)](https://youtu.be/6wmiuE3He4w?si=xQSYrtJ7eRGYEiC7).
+
+You can watch a controller install video from [1upRestorations (English)](https://www.youtube.com/watch?v=qigm2QdvjLU)
 
 ## Getting a Board
 
@@ -80,10 +82,10 @@ I do not have time to build commissions on a regular basis, however, there are m
 
 | Part Number | Description | Region | Status| Japan | United States | United Kingdom |
 |-------------|-------------|----------------------|-------|-------|---------------|----------------|
-| 56V313A (1990.6) | Found in 1/1/1 SHVC controllers. 2x shift register model | NTSC-J / NTSC-U | Preparing for Release | N/A | N/A | N/A |
+| 56V313A (1990.6) | Found in 1/1/1 SHVC controllers. 2x shift register model | NTSC-J / NTSC-U | Released | [Ko-Fi (Direct)](https://ko-fi.com/starlightk7/shop), [eBay(Direct)](https://www.ebay.com/itm/137100897247) | [1upRestorations](https://1uprestorations.com/products/opensfc-controllers) | [RetroUpgrades](https://www.retroupgrades.co.uk/) (Coming Soon) |
 | 56V313B (1991)   | Found in 2/1/3 SHVC controllers. 1x Obsolete Shift Register, no PAL support | NTSC-J / NTSC-U | Planned | N/A | N/A | N/A |
-| 56V313D (1992+)  | Found in controllers for GPM and beyond. 1x Obsolete Shift Register | Universal | Preparing for Release | N/A | N/A | N/A |
-| 56V313A          | L/R Trigger Board | Universal | Preparing for Release | N/A | N/A | N/A |
+| 56V313D (1992+)  | Found in controllers for GPM and beyond. 1x Obsolete Shift Register | Universal | Released | [Ko-Fi (Direct)](https://ko-fi.com/starlightk7/shop), [eBay(Direct)](https://www.ebay.com/itm/137100898087) | [1upRestorations](https://1uprestorations.com/products/opensfc-controllers) | [RetroUpgrades](https://www.retroupgrades.co.uk/) (Coming Soon) |
+| 56V313A          | L/R Trigger Board | Universal | Released | [Ko-Fi (Direct)](https://ko-fi.com/starlightk7/shop) | [1upRestorations](https://1uprestorations.com/products/opensfc-controllers) | [RetroUpgrades](https://www.retroupgrades.co.uk/) (Coming Soon) |
 
 ### Cartridges
 

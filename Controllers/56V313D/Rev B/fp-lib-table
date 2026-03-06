@@ -1,0 +1,4 @@
+(fp_lib_table
+  (version 7)
+  (lib (name "OpenSFC")(type "KiCad")(uri "${KIPRJMOD}/../../../Common/libraries/OpenSFC.pretty")(options "")(descr ""))
+)
