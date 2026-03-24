@@ -6878,9 +6878,9 @@
 		)
 		(uuid "fb36ddf1-ff36-4e3b-a47b-f9a0b06624e1")
 	)
-	(text "Note:\nThis causes\naudio imbalance.\nTo fix cut the \nlink and add \ndedicated 47uF\non R.REF"
+	(text "Note:\nThis causes\naudio imbalance.\nTo fix cut the \nlink and add \ndedicated 47uF\non L.REF, or lift\nPin 10 and isolate\nit with kapton\nunderneath."
 		(exclude_from_sim no)
-		(at 164.084 90.17 0)
+		(at 162.052 88.392 0)
 		(effects
 			(font
 				(size 0.762 0.762)
@@ -7020,6 +7020,12 @@
 		(diameter 0)
 		(color 255 0 85 1)
 		(uuid "1d241c72-cc33-4fc6-b22d-32067117c22e")
+	)
+	(junction
+		(at 175.26 92.71)
+		(diameter 0)
+		(color 255 0 85 1)
+		(uuid "1e0a9fc9-d2bc-4545-8b8e-7c3238c9fbe5")
 	)
 	(junction
 		(at 271.78 80.01)
@@ -7170,12 +7176,6 @@
 		(diameter 0)
 		(color 255 0 0 1)
 		(uuid "71a79863-d80f-4623-a711-5e542f679092")
-	)
-	(junction
-		(at 175.26 97.79)
-		(diameter 0)
-		(color 180 180 180 1)
-		(uuid "71eff100-6c76-4bd5-8859-e73b6cb8956c")
 	)
 	(junction
 		(at 130.81 22.86)
@@ -10422,17 +10422,6 @@
 	)
 	(wire
 		(pts
-			(xy 172.72 97.79) (xy 175.26 97.79)
-		)
-		(stroke
-			(width 0)
-			(type default)
-			(color 180 180 180 1)
-		)
-		(uuid "47caea90-21c6-4918-9733-8880b4e4e4c2")
-	)
-	(wire
-		(pts
 			(xy 43.18 95.25) (xy 43.18 105.41)
 		)
 		(stroke
@@ -10564,12 +10553,12 @@
 	)
 	(wire
 		(pts
-			(xy 160.02 95.25) (xy 172.72 95.25)
+			(xy 160.02 95.25) (xy 173.99 95.25)
 		)
 		(stroke
 			(width 0)
 			(type default)
-			(color 180 180 180 1)
+			(color 255 0 85 1)
 		)
 		(uuid "4c36f18a-1b13-49b5-9284-3ec25455d082")
 	)
@@ -11710,7 +11699,7 @@
 		(stroke
 			(width 0)
 			(type default)
-			(color 180 180 180 1)
+			(color 255 0 85 1)
 		)
 		(uuid "6c6f8e77-0daa-46c0-ac75-88ba26f67e2f")
 	)
@@ -13667,7 +13656,7 @@
 		(stroke
 			(width 0)
 			(type default)
-			(color 255 0 85 1)
+			(color 180 180 180 1)
 		)
 		(uuid "9bb1d171-514b-4c79-bfb8-ede9ae864985")
 	)
@@ -14965,6 +14954,17 @@
 	)
 	(wire
 		(pts
+			(xy 173.99 95.25) (xy 173.99 92.71)
+		)
+		(stroke
+			(width 0)
+			(type default)
+			(color 255 0 85 1)
+		)
+		(uuid "be234cf2-db36-4014-8c16-ccdb56e215ed")
+	)
+	(wire
+		(pts
 			(xy 86.36 135.89) (xy 86.36 140.97)
 		)
 		(stroke
@@ -15279,6 +15279,17 @@
 			(color 255 87 179 1)
 		)
 		(uuid "c6294b23-9e18-4724-a8f8-a762946bf430")
+	)
+	(wire
+		(pts
+			(xy 173.99 92.71) (xy 175.26 92.71)
+		)
+		(stroke
+			(width 0)
+			(type default)
+			(color 255 0 85 1)
+		)
+		(uuid "c62c23a3-b40c-446d-b74d-c1b2398e577b")
 	)
 	(wire
 		(pts
@@ -15717,17 +15728,6 @@
 			(color 0 0 0 1)
 		)
 		(uuid "d2a12bc2-bb91-4193-886b-1a9128b98742")
-	)
-	(wire
-		(pts
-			(xy 172.72 95.25) (xy 172.72 97.79)
-		)
-		(stroke
-			(width 0)
-			(type default)
-			(color 180 180 180 1)
-		)
-		(uuid "d3052eb1-fb30-48f7-a840-e15d7bdf99f7")
 	)
 	(wire
 		(pts
